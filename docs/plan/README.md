@@ -17,17 +17,17 @@ Tasks without a dependency between them can run in parallel sessions. Claim in t
 
 Status is `todo`, `in-progress`, `blocked` or `done`.
 
-| #   | Task                                                               | Depends on | Status      |
-| --- | ------------------------------------------------------------------ | ---------- | ----------- |
-| 01  | [Scaffold and Netlify deploy](./01-scaffold-and-deploy.md)         | none       | in-progress |
-| 02  | [Database schema, RLS and policy tests](./02-database-and-rls.md)  | 01         | todo        |
-| 03  | [Google sign-in and sessions](./03-auth.md)                        | 01, 02     | todo        |
-| 04  | [Design system](./04-design-system.md)                             | 01         | todo        |
-| 05  | [App shell and Projects](./05-app-shell-and-projects.md)           | 02, 03, 04 | todo        |
-| 06  | [Members and Invite](./06-members-and-invite.md)                   | 05         | todo        |
-| 07  | [Board and Tasks](./07-board-and-tasks.md)                         | 05         | todo        |
-| 08  | [Drag-and-drop and optimistic updates](./08-drag-and-drop.md)      | 07         | todo        |
-| 09  | [Demo Session](./09-demo-session.md)                               | 03, 06, 07 | todo        |
-| 10  | [End-to-end tests, a11y pass and release](./10-e2e-and-release.md) | 08, 09     | todo        |
+| #   | Task                                                               | Depends on | Status  |
+| --- | ------------------------------------------------------------------ | ---------- | ------- |
+| 01  | [Scaffold and Netlify deploy](./01-scaffold-and-deploy.md)         | none       | blocked |
+| 02  | [Database schema, RLS and policy tests](./02-database-and-rls.md)  | 01         | todo    |
+| 03  | [Google sign-in and sessions](./03-auth.md)                        | 01, 02     | todo    |
+| 04  | [Design system](./04-design-system.md)                             | 01         | todo    |
+| 05  | [App shell and Projects](./05-app-shell-and-projects.md)           | 02, 03, 04 | todo    |
+| 06  | [Members and Invite](./06-members-and-invite.md)                   | 05         | todo    |
+| 07  | [Board and Tasks](./07-board-and-tasks.md)                         | 05         | todo    |
+| 08  | [Drag-and-drop and optimistic updates](./08-drag-and-drop.md)      | 07         | todo    |
+| 09  | [Demo Session](./09-demo-session.md)                               | 03, 06, 07 | todo    |
+| 10  | [End-to-end tests, a11y pass and release](./10-e2e-and-release.md) | 08, 09     | todo    |
 
 Parallel waves: 01, then 02 with 04, then 03, then 05, then 06 with 07, then 08 with 09, then 10.
